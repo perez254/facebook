@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook clone class project</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/user-3.jpg">
+</head>
+<body>
+    <header class="header">
+        <!-- left side of the header -->
+        <div class="header__left">
+            <svg class="header__logo">
+                <use xlink:href="images/sprite.svg#icon-facebook"></use>
+            </svg>
+            <div class="header__form">
+                <svg class="header__logo__form">
+                    <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+                <input type="text" class="header__form--input" placeholder="search facebook">
+            </div>
+        </div>
+
+        <!-- middle part of the header -->
+        <div class="header__middle">
+            <i class="header__middle--link">
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-home"></use>
+                </svg>
+            </i>
+            <i class="header__middle--link">
+                <span class="header__middle--notification">2+</span>
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-youtube-with-circle"></use>
+                </svg>
+            </i>
+            <i class="header__middle--link">
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-shop"></use>
+                </svg>
+            </i>
+            <i class="header__middle--link">
+                <span class="header__middle--notification">12</span>
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-group"></use>
+                </svg>
+            </i>
+            <i class="header__middle--link">
+                <span class="header__middle--notification">5+</span>
+                <svg class="header__logo__middle logo-pos">
+                    <use xlink:href="images/sprite.svg#icon-shop"></use>
+                </svg>
+            </i>
+        </div>
+
+        <!-- the right part of the header -->
+        <div class="header__right">
+            <div class="header__right--account-holder">
+                <span class="account__holder--avatar">
+                    <img src="images/user-3.jpg" alt="" class="avatar__image">
+                </span>
+                <span class="account__holder--name">Freshia Njoki</span>
+            </div>
+            <div class="header__right--icons">
+                <i class="header__middle--link">
+                    <svg class="header__logo__middle">
+                        <use xlink:href="images/sprite.svg#icon-dial-pad"></use>
+                    </svg>
+                </i>
+                <i class="header__middle--link">
+                    <svg class="header__logo__middle">
+                        <use xlink:href="images/sprite.svg#icon-bell"></use>
+                    </svg>
+                </i>
+                <i class="header__middle--link">
+                    <svg class="header__logo__middle">
+                        <use xlink:href="images/sprite.svg#icon-chevron-circle-down"></use>
+                    </svg>
+                </i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <main class="main">
+        <div class="main__left u-overflow-scroll-y">
+            <div class="user">
+                <span class="user__avatar">
+                    <img src="images/user-3.jpg" alt="" class="avatar__image">
+                </span>
+                <span class="user__name">Freshia Njoki</span>
+            </div>
+
+            <!-- menu left container and children -->
+            <ol class="menu__left">
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-users"></use>
+                    </svg>
+                    <a href="#" class="menu__left--link">friends</a>
+                </li>
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-group"></use>
+                    </svg>
+                    <a href="#" class="menu__left--link">groups</a>
+                </li>
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-shop"></use>
+                    </svg>
+                    <a href="#" class="menu__left--link">marketplace</a>
+                </li>
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-youtube-with-circle"></use>
+                    </svg>
+                    <div class="menu__link-container">
+                        <a href="#" class="menu__left--link u-link">watch</a>
+                        <a href="#" class="menu__left--link-watch">+9 new videos</a>
+                    </div>
+                </li>
+                <li class="menu__left--item">
+                    <svg class="menu__left--svg">
+                        <use xlink:href="images/sprite.svg#icon-birthday-cake"></use>
+                    </svg>
+                    <a href="#" class="menu__left--link">memories</a>
+                </li>
+            </ol>
+            <div class="more">
+                <span class="more__svg--circle">
+                    <svg class="more--svg">
+                        <use xlink:href="images/sprite.svg#icon-chevron-down"></use>
+                    </svg>
+                </span>
+                <a href="#" class="u-link">see more</a>
+            </div>
+
+            <!-- groups -->
+            <h1 class="heading__tertiary">
+                your shortcuts
+            </h1>
+            <div class="shortcuts__container">
+                <div class="shortcut-card">
+                    <div class="shortcut-card__image">
+                        <img src="/images/music.jpg" alt="music image" class="shortcut-card__image--img">
+                    </div>
+                    <div class="shortcut-card__details">
+                        <p class="shortcut-card__details--text">
+                            My Muzika Page
+                        </p>
+                    </div>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-card__image">
+                        <img src="/images/mum.jpg" alt="mum image" class="shortcut-card__image--img">
+                    </div>
+                    <div class="shortcut-card__details">
+                        <p class="shortcut-card__details--text">
+                            Sweet Runda Mums
+                        </p>
+                    </div>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-card__image">
+                        <img src="/images/sisters.jpg" alt="sisters image" class="shortcut-card__image--img">
+                    </div>
+                    <div class="shortcut-card__details">
+                        <p class="shortcut-card__details--text">
+                            The Greatest Sisters✨🥰
+                        </p>
+                    </div>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-card__image">
+                        <img src="/images/meeting.jpg" alt="sisters image" class="shortcut-card__image--img">
+                    </div>
+                    <div class="shortcut-card__details">
+                        <p class="shortcut-card__details--text">
+                            Becoming a Software Engineer
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- the middle part of the website -->
+
+        <section class="main__middle">
+            <div class="container__stories">
+                <button class="container__stories--button container__stories--button--left">
+                    <svg class="stories__button--svg">
+                        <use xlink:href="images/sprite.svg#icon-arrow-thin-left"></use>
+                    </svg>
+                </button>
+                <div class="stories-user">
+                    <div class="stories-user__image">
+                        <img src="/images/user-3.jpg" alt="user image" class="stories-user__image--img">
+                    </div>
+                    <span class="stories-user__svg">
+                        <svg class="stories-user__svg--icon">
+                            <use xlink:href="images/sprite.svg#icon-plus"></use>
+                        </svg>
+                    </span>
+                    <div class="stories-user__text">create story</div>
+                </div>
+                <div class="stories">
+                    <div class="stories__image">
+                        <img src="/images/nathan.jpg" alt="nathan image" class="stories__image--img">
+                    </div>
+                    <div class="stories__background">
+                        <img src="/images/feature-3.jpg" alt="" class="stories__image--background">
+                    </div>
+                    <span class="stories__name">nathan the great</span>
+                </div>
+                <div class="stories">
+                    <div class="stories__image">
+                        <img src="/images/zaph.jpg" alt="nathan image" class="stories__image--img">
+                    </div>
+                    <div class="stories__background">
+                        <img src="/images/zone-1.jpg" alt="" class="stories__image--background">
+                    </div>
+                    <span class="stories__name">zaphenath paneah</span>
+                </div>
+                <div class="stories">
+                    <div class="stories__image">
+                        <img src="/images/humphrey.jpg" alt="nathan image" class="stories__image--img">
+                    </div>
+                    <div class="stories__background">
+                        <img src="/images/zone-2.jpg" alt="" class="stories__image--background">
+                    </div>
+                    <span class="stories__name">nathan the great</span>
+                </div>
+                <div class="stories">
+                    <div class="stories__image">
+                        <img src="/images/sam.jpg" alt="nathan image" class="stories__image--img">
+                    </div>
+                    <div class="stories__background">
+                        <img src="/images/user-1.jpg" alt="" class="stories__image--background">
+                    </div>
+                    <span class="stories__name">samuel ochiel</span>
+                </div>
+                <div class="stories">
+                    <div class="stories__image">
+                        <img src="/images/user-4.jpg" alt="nathan image" class="stories__image--img">
+                    </div>
+                    <div class="stories__background">
+                        <img src="/images/zone-5.jpg" alt="" class="stories__image--background">
+                    </div>
+                    <span class="stories__name">fenekasi bwibo II</span>
+                </div>
+                <button class="container__stories--button container__stories--button--right">
+                    <svg class="stories__button--svg">
+                        <use xlink:href="images/sprite.svg#icon-arrow-thin-right"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- the page upadate pop up like part -->
+            <div class="page-update">
+                <div class="page-update__header">
+                    <svg class="page-update__header--svg">
+                        <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                    <svg class="page-update__header--svg page-update__header--baselined">
+                        <use xlink:href="images/sprite.svg#icon-notebook"></use>
+                    </svg>
+                    <svg class="page-update__header--svg">
+                        <use xlink:href="images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+                <div class="page-update__text">
+                    <h4 class="page-update__text--heading">
+                        Keep your Page up to date
+                    </h4>
+                    <p class="page-update__text--paragraph">
+                        Share updates about My Muzika Page by creating a new post, photo or video.
+                    </p>
+                </div>
+                <div class="page-update__button">
+                    <a href="#" class="page-update__button--btn">create post</a>
+                </div>
+            </div>
+
+            <!-- whats on your mind part of the webpage -->
+            <div class="mind">
+                <div class="mind__header">
+                    <div class="mind__image">
+                        <img src="/images/user-3.jpg" alt="user image" class="mind__image--img">
+                    </div>
+                    <div class="mind__form">
+                        <input type="text" class="mind__form--input" placeholder="What's on your mind, Freshia">
+                    </div>
+                </div>
+                <div class="mind__body">
+                    <div class="mind__body--container">
+                        <svg class="mind__body--icon mind__body--icon--first">
+                            <use xlink:href="images/sprite.svg#icon-video-camera"></use>
+                        </svg>
+                        <span class="mind__text">live video</span>
+                    </div>
+                    <div class="mind__body--container">
+                        <svg class="mind__body--icon mind__body--icon--second">
+                            <use xlink:href="images/sprite.svg#icon-photo"></use>
+                        </svg>
+                        <span class="mind__text">photo/video</span>
+                    </div>
+                    <div class="mind__body--container">
+                        <svg class="mind__body--icon mind__body--icon--third">
+                            <use xlink:href="images/sprite.svg#icon-mood-happy-outline"></use>
+                        </svg>
+                        <span class="mind__text">feeling/activity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the active chats part of the webapage -->
+            <div class="active">
+                <div class="active__image">
+                    <img src="images/user-4.jpg" alt="user 4" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+                <div class="active__image">
+                    <img src="images/sam.jpg" alt="sam" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+                <div class="active__image">
+                    <img src="images/zaph.jpg" alt="zaph" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+                <div class="active__image">
+                    <img src="images/nathan.jpg" alt="nathan" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+                <div class="active__image">
+                    <img src="images/humphrey.jpg" alt="humphrey" class="active__image--img">
+                    <span class="active__balloon--notification"></span>
+                </div>
+            </div>
+
+            <!-- the posts part of the webpage -->
+            <div class="post">
+                <div class="post__header">
+                    <div class="post__avatar">
+                        <img src="/images/sam.jpg" alt="user image" class="post__avatar--img">
+                    </div>
+                    <div class="helper__margright--auto">
+                        <div class="post__details">
+                            <div class="post__details--users">
+                                <span class="bold">samuel ochiel</span> is with <span class="bold">humz</span>
+                                and <span class="bold">5 others</span>
+                            </div>
+                            <div class="post__details--date">
+                                December 8 at 9:14 am 
+                            </div>
+                        </div>
+                        <svg class="post__header--svg">
+                            <use xlink:href="images/sprite.svg#icon-dots-horizontal-triple"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="post__caption">
+                    <p class="post__caption--text">
+                        Prime tech solutions has bought a bus for an orphanage
+                        <a href="#" class="post__caption--tag">#ubuntuTogetherWeCan</a>
+                    </p>
+                </div>
+                <div class="post__image">
+                    <img src="/images/bus.jpg" alt="post" class="post__image--img">
+                </div>
+                <div class="post__likes">
+                    <span class="post__likes--likes">
+                        <svg class="post__likes--svg">
+                            <use xlink:href="images/sprite.svg#icon-like"></use>
+                        </svg>
+                        <span class="post__likes--likers">
+                            Bill Gates, Elon Musk and 77K others
+                        </span>
+                    </span>
+                    <span class="post__comments">
+                        2M comments
+                    </span>
+                </div>
+                <div class="post__actions">
+                    <span class="post__actions--holder">
+                        <svg class="post__lactions--svg">
+                            <use xlink:href="images/sprite.svg#icon-like"></use>
+                        </svg>
+                        <span class="post__actions--action">like</span>
+                    </span>
+                    <span class="post__actions--holder">
+                        <svg class="post__lactions--svg">
+                            <use xlink:href="images/sprite.svg#icon-chat_bubble_outline"></use>
+                        </svg>
+                        <span class="post__actions--action">comment</span>
+                    </span>
+                </div>
+                <div class="post__comments">
+                    <a href="#" class="post__comment--view">view previous 2M comments</a>
+                    <div class="post__comment--details">
+                        <div class="post__comments--avatar">
+                            <img src="/images/gates.jpg" alt="commenter image" class="post__comments--dp">
+                        </div>
+                        <div>
+                            <p class="post__comments--comment">
+                                <span class="post__comments--commenter">Bill Gates</span>
+                                <span class="post__comments--text">
+                                    This is very encouraging, I think all other companies should learn from Prime
+                                    Tech solutions, Good Job Samuel, Humphrey, Nathan and Dennis.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post__comment--details">
+                        <div class="post__comments--avatar">
+                            <img src="/images/musk.jpg" alt="commenter image" class="post__comments--dp">
+                        </div>
+                        <div>
+                            <p class="post__comments--comment">
+                                <span class="post__comments--commenter">Elon Musk</span>
+                                <span class="post__comments--text">
+                                    Can I talk to you guys, Please?
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="post__comment--view">view 3K more comments</a>
+                </div>
+                <div class="post__comment">
+                    <div class="post__comment--image">
+                        <img src="/images/user-3.jpg" alt="user avatar" class="post__comment--img">
+                    </div>
+                    <div class="post__comment--form">
+                        <input type="text" class="post__comment--input" placeholder="write a comment...">
+                        <div class="post__comment--icons">
+                            <svg class="post__comment--svg">
+                                <use xlink:href="images/sprite.svg#icon-mood-happy-outline"></use>
+                            </svg>
+                            <svg class="post__comment--svg">
+                                <use xlink:href="images/sprite.svg#icon-camera"></use>
+                            </svg>
+                            <svg class="post__comment--svg">
+                                <use xlink:href="images/sprite.svg#icon-file-gif"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- another dummy post -->
+            <div class="post">
+                <div class="post__header">
+                    <div class="post__avatar">
+                        <img src="/images/musk.jpg" alt="user image" class="post__avatar--img">
+                    </div>
+                    <div class="helper__margright--auto">
+                        <div class="post__details">
+                            <div class="post__details--users">
+                                <span class="bold">elon musk</span> is with <span class="bold">Prime Tech</span>
+                            </div>
+                            <div class="post__details--date">
+                                December 12 at 10:22 am 
+                            </div>
+                        </div>
+                        <svg class="post__header--svg">
+                            <use xlink:href="images/sprite.svg#icon-dots-horizontal-triple"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="post__caption">
+                    <p class="post__caption--text">
+                        We will be launching our new free code learning platform in association with Prime Tech
+                        <a href="#" class="post__caption--tag">#codeForEveryone</a>
+                    </p>
+                </div>
+                <div class="post__image">
+                    <img src="/images/code.png" alt="post" class="post__image--img">
+                </div>
+                <div class="post__likes">
+                    <span class="post__likes--likes">
+                        <svg class="post__likes--svg">
+                            <use xlink:href="images/sprite.svg#icon-like"></use>
+                        </svg>
+                        <span class="post__likes--likers">
+                            Bill Gates, Bjourne Stroustrop and 1M others
+                        </span>
+                    </span>
+                    <span class="post__comments">
+                        122K comments
+                    </span>
+                </div>
+                <div class="post__actions">
+                    <span class="post__actions--holder">
+                        <svg class="post__lactions--svg">
+                            <use xlink:href="images/sprite.svg#icon-like"></use>
+                        </svg>
+                        <span class="post__actions--action">like</span>
+                    </span>
+                    <span class="post__actions--holder">
+                        <svg class="post__lactions--svg">
+                            <use xlink:href="images/sprite.svg#icon-chat_bubble_outline"></use>
+                        </svg>
+                        <span class="post__actions--action">comment</span>
+                    </span>
+                </div>
+                <div class="post__comments">
+                    <a href="#" class="post__comment--view">view previous 300K comments</a>
+                    <div class="post__comment--details">
+                        <div class="post__comments--avatar">
+                            <img src="/images/user-4.jpg" alt="commenter image" class="post__comments--dp">
+                        </div>
+                        <div>
+                            <p class="post__comments--comment">
+                                <span class="post__comments--commenter">Kevin Phillips</span>
+                                <span class="post__comments--text">
+                                    This is what we have all been waiting for, can't wait to learn with the best minds
+                                    in the world
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="post__comment--view">view 3K more comments</a>
+                </div>
+                <div class="post__comment">
+                    <div class="post__comment--image">
+                        <img src="/images/user-3.jpg" alt="user avatar" class="post__comment--img">
+                    </div>
+                    <div class="post__comment--form">
+                        <input type="text" class="post__comment--input" placeholder="write a comment...">
+                        <div class="post__comment--icons">
+                            <svg class="post__comment--svg">
+                                <use xlink:href="images/sprite.svg#icon-mood-happy-outline"></use>
+                            </svg>
+                            <svg class="post__comment--svg">
+                                <use xlink:href="images/sprite.svg#icon-camera"></use>
+                            </svg>
+                            <svg class="post__comment--svg">
+                                <use xlink:href="images/sprite.svg#icon-file-gif"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end of the middle part of the page -->
+
+        <!-- the rightmost part of the webpage -->
+        <div class="main__right u-overflow-scroll-y">
+            <div class="birthday">
+                <div class="birthday__svg-container">
+                    <svg class="birthday__svg--icon">
+                        <use xlink:href="images/sprite.svg#icon-birthday-cake"></use>
+                    </svg>
+                    <span class="birthday__svg--text">birthday</span>
+                    <svg class="birthday__svg--icon">
+                        <use xlink:href="images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+                <div class="birthday__notification">
+                    <p class="birthday__notification--text">
+                        <span class="bold">Humphrey Muriungi and 5 others</span> have their birthday today
+                    </p>
+                </div>
+            </div>
+
+            <!-- sponsored part of the right part -->
+            <div class="sponsored__container">
+                <h1 class="heading__tertiary">
+                    sponsored
+                </h1>
+                <div class="sponsored__cards--container">
+                    <div class="sponsored">
+                        <div class="sponsored__image">
+                            <img src="/images/corona.jpg" alt="" class="sponsored__image--img">
+                        </div>
+                        <div class="sponsored__text">
+                            <span class="sponsored__text--title">latest covid news</span>
+                            <span class="sponsored__link">
+                                <a href="#" class="sponsored__text--link">covid.com</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sponsored">
+                        <div class="sponsored__image">
+                            <img src="/images/software-engineer.jpg" alt="" class="sponsored__image--img">
+                        </div>
+                        <div class="sponsored__text">
+                            <span class="sponsored__text--title">elite software engineer needed</span>
+                            <span class="sponsored__link">
+                                <a href="#" class="sponsored__text--link">kenya-kuna-job.com</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the part that shows the pages owned by the user -->
+            <div class="pages">
+                <div class="pages__header">
+                    <h1 class="heading__tertiary">
+                        your pages
+                    </h1>
+                    <svg class="pages__header--svg">
+                        <use xlink:href="images/sprite.svg#icon-dots-horizontal-triple"></use>
+                    </svg>
+                </div>
+
+                <div class="page-card">
+                    <div class="page-card__image">
+                        <img src="/images/music.jpg" alt="" class="page-card__image--img">
+                    </div>
+                    <div class="page-card__name">
+                        <p class="page-card__name--name">
+                            MY Muzika Page
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pages-notifications">
+                    <div class="notifications__card">
+                        <svg class="notifications__card--icon">
+                            <use xlink:href="images/sprite.svg#icon-bell"></use>
+                        </svg>
+                        <p class="notifications__card--text">
+                            20+ notifications
+                        </p>
+                    </div>
+                    <div class="notifications__card">
+                        <svg class="notifications__card--icon">
+                            <use xlink:href="images/sprite.svg#icon-announcement"></use>
+                        </svg>
+                        <p class="notifications__card--text">
+                            create promotion
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- icon-video-camera -->
+            <!-- the contacts part of the main right -->
+            <div class="contacts">
+                <div class="contacts__header">
+                    <h1 class="heading__tertiary">
+                        contacts
+                    </h1>
+                    <div class="contact__svg">
+                        <svg class="contacts__svg--icon">
+                            <use xlink:href="images/sprite.svg#icon-video-camera"></use>
+                        </svg>
+                        <svg class="contacts__svg--icon">
+                            <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <svg class="contacts__svg--icon u-rotate-90">
+                            <use xlink:href="images/sprite.svg#icon-dots-horizontal-triple"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="contacts__body">
+                    <div class="contact">
+                        <div class="contact__image">
+                            <img src="/images/nathan.jpg" alt="nathan image" class="contact__image--img">
+                        </div>
+                        <div class="contact__name">
+                            <p class="contact__name--nm">nathan the best</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__image">
+                            <img src="/images/zaph.jpg" alt="zaph image" class="contact__image--img">
+                        </div>
+                        <div class="contact__name">
+                            <p class="contact__name--nm">zaph the great</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__image">
+                            <img src="/images/humphrey.jpg" alt="humphrey image" class="contact__image--img">
+                        </div>
+                        <div class="contact__name">
+                            <p class="contact__name--nm">I_AM_humphrey</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__image">
+                            <img src="/images/sam.jpg" alt="sam image" class="contact__image--img">
+                        </div>
+                        <div class="contact__name">
+                            <p class="contact__name--nm">Thee__Sam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the chat parts of the main right -->
+            <div class="chats">
+                <h1 class="heading__tertiary">
+                    group conversations
+                </h1>
+                <div class="chat-card">
+                    <div class="chat-card__image">
+                        <img src="/images/sisters.jpg" alt="sisters image" class="chat-card__image--img">
+                        <span class="chart-card__notification--baloon"></span>
+                    </div>
+                    <div class="chat-card__name">
+                        <p class="chat-card__name--nm">the greatest sisters✨🥰</p>
+                    </div>
+                </div>
+                <div class="chat-card">
+                    <div class="chat-card__image">
+                        <img src="/images/mum.jpg" alt="mum image" class="chat-card__image--img">
+                        <span class="chart-card__notification--baloon"></span>
+                    </div>
+                    <div class="chat-card__name">
+                        <p class="chat-card__name--nm">sweet runda mums</p>
+                    </div>
+                </div>
+
+                <div class="new-group">
+                    <span class="new-group__icon">
+                        <svg class="new-group__icon--svg">
+                            <use xlink:href="images/sprite.svg#icon-plus"></use>
+                        </svg>
+                    </span>
+                    <div class="new-group__text">
+                        <p class="new-group__text-txt">create  new group</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/javascript/app.js"></script>
+</body>
+</html>
